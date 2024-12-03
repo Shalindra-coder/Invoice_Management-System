@@ -1,0 +1,16 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+    <h1>You can check your details using your name. Thank you!</h1>
+
+    <!-- Hide the content using CSS -->
+    <div>
+        <h1>{{doc.customer_name}}</h1>
+        <p>Invoice_Number: {{ doc.invoice_number }}</p>
+        <p>Date: {{ doc.date }}</p>
+        <p>Contact_Number: {{ doc.contact_number }}</p>
+        <p>Discount: {{ doc.discount }}</p>
+        <p>Total_Amount: {{ doc.total_amount }}</p>
+    </div>
+
+{% endblock %}
